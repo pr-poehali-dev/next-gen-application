@@ -150,8 +150,8 @@ export default function VerdantPage() {
   }
 
   return (
-    <div className="relative min-h-screen bg-[#0B0C0F] text-[#F2F3F5] overflow-x-hidden">
-      <header className="fixed top-6 left-6 md:w-auto md:right-auto right-6 z-40 border border-white/10 backdrop-blur-md bg-[#0B0C0F]/80 rounded-[16px]">
+    <div className="relative min-h-screen bg-[#f0faf6] text-[#1a3a2e] overflow-x-hidden">
+      <header className="fixed top-6 left-6 md:w-auto md:right-auto right-6 z-40 border border-emerald-200/60 backdrop-blur-md bg-[#f0faf6]/80 rounded-[16px]">
         <div className="w-full mx-auto px-6">
           <div className="flex items-center gap-6 md:h-14 h-14">
             <button
@@ -164,31 +164,31 @@ export default function VerdantPage() {
             <nav className="hidden md:flex items-center gap-8">
               <button
                 onClick={() => scrollToSection("metrics")}
-                className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors duration-300"
+                className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors duration-300"
               >
                 О нас
               </button>
               <button
                 onClick={() => scrollToSection("map")}
-                className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors duration-300"
+                className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors duration-300"
               >
                 Услуги
               </button>
               <button
                 onClick={() => scrollToSection("narrative")}
-                className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors duration-300"
+                className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors duration-300"
               >
                 Как мы работаем
               </button>
               <button
                 onClick={() => scrollToSection("faq")}
-                className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors duration-300"
+                className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors duration-300"
               >
                 Вопросы
               </button>
               <button
                 onClick={() => scrollToSection("cta")}
-                className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors duration-300"
+                className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors duration-300"
               >
                 Заказать
               </button>
@@ -196,7 +196,7 @@ export default function VerdantPage() {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden ml-auto p-2 hover:bg-white/5 rounded-lg transition-colors duration-300"
+              className="md:hidden ml-auto p-2 hover:bg-emerald-50 border-emerald-200 rounded-lg transition-colors duration-300"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -206,35 +206,35 @@ export default function VerdantPage() {
       </header>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-[#0B0C0F]/95 backdrop-blur-md z-50 flex flex-col items-start justify-end pb-20 pt-20 px-6">
+        <div className="fixed inset-0 bg-[#f0faf6]/97 backdrop-blur-md z-50 flex flex-col items-start justify-end pb-20 pt-20 px-6">
           <div className="flex flex-col gap-8 items-start text-left w-full">
             <button
               onClick={() => scrollToSection("metrics")}
-              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-pink-400 transition-colors duration-300"
+              className="font-serif text-5xl md:text-7xl font-light text-[#1a3a2e] hover:text-emerald-600 transition-colors duration-300"
             >
               О нас
             </button>
             <button
               onClick={() => scrollToSection("map")}
-              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-pink-400 transition-colors duration-300"
+              className="font-serif text-5xl md:text-7xl font-light text-[#1a3a2e] hover:text-emerald-600 transition-colors duration-300"
             >
               Услуги
             </button>
             <button
               onClick={() => scrollToSection("narrative")}
-              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-pink-400 transition-colors duration-300"
+              className="font-serif text-5xl md:text-7xl font-light text-[#1a3a2e] hover:text-emerald-600 transition-colors duration-300"
             >
               Как мы работаем
             </button>
             <button
               onClick={() => scrollToSection("faq")}
-              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-pink-400 transition-colors duration-300"
+              className="font-serif text-5xl md:text-7xl font-light text-[#1a3a2e] hover:text-emerald-600 transition-colors duration-300"
             >
               Вопросы
             </button>
             <button
               onClick={() => scrollToSection("cta")}
-              className="font-serif text-5xl md:text-7xl font-light text-[#F2F3F5] hover:text-pink-400 transition-colors duration-300"
+              className="font-serif text-5xl md:text-7xl font-light text-[#1a3a2e] hover:text-emerald-600 transition-colors duration-300"
             >
               Заказать
             </button>
@@ -262,7 +262,7 @@ export default function VerdantPage() {
           }}
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C0F] via-[#0B0C0F]/70 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#f0faf6] via-[#f0faf6]/40 to-transparent pointer-events-none" />
 
         <div
           className="max-w-[1120px] w-full mx-auto relative z-10"
@@ -291,12 +291,12 @@ export default function VerdantPage() {
             </p>
             <div className="stagger-reveal flex gap-4 justify-center flex-wrap" style={{ animationDelay: "270ms" }}>
               <a href="sms:+79050698829">
-                <Button className="glass-button px-8 py-6 text-base rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 text-white">
+                <Button className="glass-button px-8 py-6 text-base rounded-full bg-emerald-50 border-emerald-200 hover:bg-white/10 hover:border-white/20 transition-all duration-300 text-white">
                   Написать SMS
                 </Button>
               </a>
               <a href="tel:+79050698829">
-                <Button className="glass-button px-8 py-6 text-base rounded-full bg-pink-500/20 border border-pink-400/30 hover:bg-pink-500/30 hover:border-pink-400/50 transition-all duration-300 text-white flex items-center gap-2">
+                <Button className="glass-button px-8 py-6 text-base rounded-full bg-emerald-500/20 border border-emerald-400/40 hover:bg-emerald-500/30 hover:border-emerald-400/60 transition-all duration-300 text-white flex items-center gap-2">
                   <Phone className="w-4 h-4" /> Позвонить
                 </Button>
               </a>
@@ -324,9 +324,9 @@ export default function VerdantPage() {
         </div>
       </section>
 
-      <section className="relative py-12 border-y border-white/5 bg-[#0B0C0F] overflow-hidden md:py-8 md:pt-8 md:pb-4">
+      <section className="relative py-12 border-y border-emerald-100 bg-[#e8f7f1] overflow-hidden md:py-8 md:pt-8 md:pb-4">
         <div className="w-full">
-          <p className="text-center text-xs md:text-sm uppercase tracking-[0.2em] text-[#A7ABB3] mb-8">
+          <p className="text-center text-xs md:text-sm uppercase tracking-[0.2em] text-[#5a8070] mb-8">
             Нас рекомендуют соседи, друзья и довольные клиенты
           </p>
           <div className="logo-marquee">
@@ -353,7 +353,8 @@ export default function VerdantPage() {
                   <img
                     src={logo || "/placeholder.svg"}
                     alt={`Логотип партнера ${i + 1}`}
-                    className="h-32 md:h-24 w-auto object-contain opacity-60 hover:opacity-60 transition-all duration-300 brightness-0 invert"
+                    className="h-32 md:h-24 w-auto object-contain opacity-60 hover:opacity-60 transition-all duration-300"
+                    style={{ filter: "brightness(0) saturate(100%) hue-rotate(120deg)" }}
                   />
                 </div>
               ))}
@@ -369,7 +370,7 @@ export default function VerdantPage() {
             <span
               className="inline-block"
               style={{
-                background: "linear-gradient(135deg, #d9a7c7 0%, #fffcdc 100%)",
+                background: "linear-gradient(135deg, #4a9e7e 0%, #b8e8d4 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -380,7 +381,7 @@ export default function VerdantPage() {
             и с душой
           </h2>
 
-          <p className="text-[#A7ABB3] text-sm md:text-base mb-12 md:mb-16 text-center max-w-[600px] mx-auto leading-relaxed">
+          <p className="text-[#5a8070] text-sm md:text-base mb-12 md:mb-16 text-center max-w-[600px] mx-auto leading-relaxed">
             Мы выросли благодаря вам. Сотни довольных клиентов, репутация на доверии — и готовность сделать ваш дом идеально чистым.
           </p>
 
@@ -393,36 +394,68 @@ export default function VerdantPage() {
             ].map((metric, i) => (
               <div
                 key={i}
-                className="p-6 md:p-10 text-center border border-white/10 border-t-0 border-b border-l-0 border-r-0 md:py-10 md:pb-20"
+                className="p-6 md:p-10 text-center border border-emerald-100 border-t-0 border-b border-l-0 border-r-0 md:py-10 md:pb-20"
               >
                 <div
-                  className={`text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#A7ABB3] mb-4 flex items-center justify-center gap-2`}
+                  className={`text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#5a8070] mb-4 flex items-center justify-center gap-2`}
                 >
                   <span
-                    className={`w-1.5 h-1.5 rounded-full ${metric.color === "pink" ? "bg-pink-400/60" : "bg-purple-400/60"}`}
+                    className={`w-1.5 h-1.5 rounded-full ${metric.color === "pink" ? "bg-emerald-400/70" : "bg-teal-400/70"}`}
                   />
                   {metric.label}
                 </div>
                 <div className="font-serif text-[48px] md:text-[72px] leading-none font-medium">
                   <AnimatedCounter value={metric.value} />
                 </div>
-                <div className="text-[11px] md:text-xs text-[#A7ABB3] mt-3">{metric.desc}</div>
+                <div className="text-[11px] md:text-xs text-[#5a8070] mt-3">{metric.desc}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="map" className="relative py-20 md:py-32 animate-on-scroll bg-[#0B0C0F]">
+      <section className="relative py-16 md:py-24 px-4 animate-on-scroll bg-[#e8f7f1]">
+        <div className="max-w-[1120px] w-full mx-auto">
+          <div className="text-center mb-10 md:mb-14">
+            <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#5a8070] mb-4 flex items-center justify-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              НАША КОМАНДА
+            </div>
+            <h2 className="font-serif text-[28px] leading-[1.15] md:text-[42px] md:leading-[1.1] font-medium mb-4 text-[#1a3a2e]">
+              Менеджеры чистоты
+            </h2>
+            <p className="text-[#5a8070] text-sm md:text-base max-w-[480px] mx-auto leading-relaxed">
+              Профессионалы, которым вы доверяете свой дом
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {[
+              { name: "Анна", role: "Руководитель команды", img: "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/778bea6e-401c-406a-a1b9-efd187846987.jpg" },
+              { name: "Мария", role: "Старший специалист", img: "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/f9d5bd68-d76a-49f4-8d0f-2f7feb9d96f0.jpg" },
+              { name: "Екатерина", role: "Менеджер по качеству", img: "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/ab79eea9-6382-4150-9f3b-109c418e6de0.jpg" },
+            ].map((member, i) => (
+              <div key={i} className="flex flex-col items-center text-center">
+                <div className="w-full aspect-[3/4] rounded-3xl overflow-hidden mb-4 shadow-sm border border-emerald-100">
+                  <img src={member.img} alt={member.name} className="w-full h-full object-cover" />
+                </div>
+                <div className="text-[#1a3a2e] font-medium text-base">{member.name}</div>
+                <div className="text-[#5a8070] text-sm mt-1">{member.role}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="map" className="relative py-20 md:py-32 animate-on-scroll bg-[#f0faf6]">
         <div className="text-center mb-12 md:mb-16 px-4">
-          <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#A7ABB3] mb-6 flex items-center justify-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-pink-400 animate-pulse" />
+          <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#5a8070] mb-6 flex items-center justify-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
             НАШИ УСЛУГИ
           </div>
           <h2 className="font-serif text-[32px] leading-[1.15] md:text-[48px] md:leading-[1.1] font-medium mb-6 text-balance">
             Уборка на любой случай
           </h2>
-          <p className="text-[#A7ABB3] text-sm md:text-base max-w-[600px] mx-auto leading-relaxed">
+          <p className="text-[#5a8070] text-sm md:text-base max-w-[600px] mx-auto leading-relaxed">
             От генеральной уборки до быстрой экспресс-уборки — выберите подходящий формат
           </p>
         </div>
@@ -438,8 +471,8 @@ export default function VerdantPage() {
         <div className="max-w-[1120px] w-full mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-stretch">
             <div className="max-w-[720px]">
-              <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#A7ABB3] mb-6 flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-pink-400 animate-pulse" />
+              <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#5a8070] mb-6 flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                 КАК МЫ РАБОТАЕМ
               </div>
               <h2 className="font-serif text-[36px] leading-[1.15] md:text-[56px] md:leading-[1.1] font-medium mb-8 text-balance">
@@ -447,7 +480,7 @@ export default function VerdantPage() {
                 <span
                   className="inline-block"
                   style={{
-                    background: "linear-gradient(135deg, #d9a7c7 0%, #fffcdc 100%)",
+                    background: "linear-gradient(135deg, #4a9e7e 0%, #b8e8d4 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -456,7 +489,7 @@ export default function VerdantPage() {
                   особенный
                 </span>
               </h2>
-              <p className="text-[#A7ABB3] text-base md:text-lg leading-relaxed mb-12">
+              <p className="text-[#5a8070] text-base md:text-lg leading-relaxed mb-12">
                 Чисто. Честно. Доступно. Мы слышим каждый запрос и подбираем команду под ваш дом. Клиентоориентированность, конфиденциальность и современные средства уборки — наши принципы с первого дня.
               </p>
 
@@ -517,7 +550,9 @@ export default function VerdantPage() {
                       }, 300)
                     }}
                     className={`relative w-full text-left flex gap-4 items-start p-5 transition-all duration-300 rounded-xs py-4 overflow-hidden ${
-                      selectedFeature === i ? "border border-white/20" : "border border-white/10"
+                      selectedFeature === i
+                        ? "bg-emerald-50/80 hover:bg-emerald-100/80 border border-emerald-300/60"
+                        : "bg-emerald-50/80 hover:bg-emerald-100/80 border border-emerald-300/60"
                     }`}
                   >
                     <feature.Icon
@@ -527,7 +562,7 @@ export default function VerdantPage() {
                     />
                     <div className="flex-1">
                       <h3 className="text-base md:text-lg font-medium mb-1">{feature.title}</h3>
-                      <p className="text-sm md:text-base text-[#A7ABB3]">{feature.desc}</p>
+                      <p className="text-sm md:text-base text-[#5a8070]">{feature.desc}</p>
                     </div>
                     {selectedFeature === i && (
                       <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-white/10">
@@ -589,8 +624,8 @@ export default function VerdantPage() {
       <section id="faq" className="relative py-20 md:py-32 px-4 animate-on-scroll">
         <div className="max-w-[800px] w-full mx-auto">
           <div className="text-center mb-12 md:mb-16">
-            <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#A7ABB3] mb-6 flex items-center justify-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-pink-400 animate-pulse" />
+            <div className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#5a8070] mb-6 flex items-center justify-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               ЧАСТЫЕ ВОПРОСЫ
             </div>
             <h2 className="font-serif text-[32px] leading-[1.15] md:text-[48px] md:leading-[1.1] font-medium mb-6 text-balance">
@@ -598,7 +633,7 @@ export default function VerdantPage() {
               <span
                 className="inline-block"
                 style={{
-                  background: "linear-gradient(135deg, #d9a7c7 0%, #fffcdc 100%)",
+                  background: "linear-gradient(135deg, #4a9e7e 0%, #b8e8d4 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -608,7 +643,7 @@ export default function VerdantPage() {
               </span>
               ?
             </h2>
-            <p className="text-[#A7ABB3] text-sm md:text-base max-w-[600px] mx-auto leading-relaxed">
+            <p className="text-[#5a8070] text-sm md:text-base max-w-[600px] mx-auto leading-relaxed">
               Всё, что нужно знать о наших услугах — собрали самые частые вопросы.
             </p>
           </div>
@@ -648,7 +683,7 @@ export default function VerdantPage() {
             ].map((faq, i) => (
               <div
                 key={i}
-                className="border border-white/10 rounded-xl overflow-hidden transition-all duration-300 hover:border-white/20"
+                className="border border-emerald-200/60 rounded-xl overflow-hidden transition-all duration-300 hover:border-emerald-300/80 bg-white/60"
               >
                 <button
                   onClick={() => setOpenFaqIndex(openFaqIndex === i ? null : i)}
@@ -656,7 +691,7 @@ export default function VerdantPage() {
                 >
                   <span className="text-base md:text-lg font-medium pr-4">{faq.question}</span>
                   <ChevronDown
-                    className={`w-5 h-5 flex-shrink-0 text-[#A7ABB3] transition-transform duration-300 ${
+                    className={`w-5 h-5 flex-shrink-0 text-emerald-400 transition-transform duration-300 ${
                       openFaqIndex === i ? "rotate-180" : ""
                     }`}
                   />
@@ -666,7 +701,7 @@ export default function VerdantPage() {
                     openFaqIndex === i ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p className="px-6 pb-6 text-sm md:text-base text-[#A7ABB3] leading-relaxed">{faq.answer}</p>
+                  <p className="px-6 pb-6 text-sm md:text-base text-[#5a8070] leading-relaxed">{faq.answer}</p>
                 </div>
               </div>
             ))}
@@ -684,28 +719,28 @@ export default function VerdantPage() {
           backgroundAttachment: "fixed",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0B0C0F] via-[#0B0C0F]/60 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#f0faf6]/80 via-[#f0faf6]/30 to-transparent pointer-events-none" />
         <div className="max-w-[800px] w-full mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 glass-pill px-4 py-2 rounded-full mb-8 text-xs md:text-sm text-[#A7ABB3]">
-            <span className="w-1.5 h-1.5 rounded-full bg-pink-400 animate-pulse" />
+          <div className="inline-flex items-center gap-2 glass-pill px-4 py-2 rounded-full mb-8 text-xs md:text-sm text-[#5a8070]">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
             №1 в Прокопьевске-Киселёвске
           </div>
 
           <h2 className="font-serif text-[40px] leading-[1.15] md:text-[64px] md:leading-[1.1] font-medium mb-6 text-balance">
             Ваш дом сияет, а вы отдыхаете
           </h2>
-          <p className="text-[#A7ABB3] text-base md:text-lg mb-10 leading-relaxed max-w-[560px] mx-auto">
+          <p className="text-[#5a8070] text-base md:text-lg mb-10 leading-relaxed max-w-[560px] mx-auto">
             Позвольте себе роскошь идеальной чистоты без усилий. Звоните — рассчитаем стоимость бесплатно.
           </p>
 
           <div className="flex gap-4 justify-center flex-wrap">
             <a href="sms:+79050698829">
-              <Button className="glass-button text-base rounded-full bg-white/5 border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 text-white px-8 py-6 md:text-base">
+              <Button className="glass-button text-base rounded-full bg-emerald-50 border-emerald-200 hover:bg-white/15 hover:border-white/30 transition-all duration-300 text-white px-8 py-6 md:text-base">
                 Написать SMS
               </Button>
             </a>
             <a href="tel:+79050698829">
-              <Button className="glass-button text-base rounded-full bg-pink-500/20 border border-pink-400/30 hover:bg-pink-500/30 hover:border-pink-400/50 transition-all duration-300 text-white px-8 py-6 md:text-base flex items-center gap-2">
+              <Button className="glass-button text-base rounded-full bg-emerald-500/20 border border-emerald-400/40 hover:bg-emerald-500/30 hover:border-emerald-400/60 transition-all duration-300 text-white px-8 py-6 md:text-base flex items-center gap-2">
                 <Phone className="w-4 h-4" /> Позвонить
               </Button>
             </a>
@@ -713,19 +748,19 @@ export default function VerdantPage() {
         </div>
       </section>
 
-      <footer className="relative px-4 border-t border-white/5 py-8">
+      <footer className="relative px-4 border-t border-emerald-100 py-8">
         <div className="max-w-[1120px] w-full mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-12">
             {/* Brand Column */}
             <div className="flex flex-col gap-4">
               <div className="text-lg font-semibold font-mono">CLEAN №1</div>
-              <p className="text-xs text-[#A7ABB3] leading-relaxed">
+              <p className="text-xs text-[#5a8070] leading-relaxed">
                 Клининговая служба №1 в Прокопьевске-Киселёвске. 11+ лет безупречной работы. Чисто. Честно. Доступно.
               </p>
               <div className="flex items-center gap-4 mt-2">
                 <a
                   href="#"
-                  className="text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors"
+                  className="text-[#5a8070] hover:text-[#1a3a2e] transition-colors"
                   aria-label="X (Twitter)"
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -734,14 +769,14 @@ export default function VerdantPage() {
                 </a>
                 <a
                   href="#"
-                  className="text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors"
+                  className="text-[#5a8070] hover:text-[#1a3a2e] transition-colors"
                   aria-label="YouTube"
                 >
                   <Youtube className="w-4 h-4" />
                 </a>
                 <a
                   href="#"
-                  className="text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors"
+                  className="text-[#5a8070] hover:text-[#1a3a2e] transition-colors"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-4 h-4" />
@@ -751,18 +786,18 @@ export default function VerdantPage() {
 
             {/* Product Menu */}
             <div className="flex flex-col gap-4">
-              <div className="text-xs uppercase tracking-[0.15em] text-[#F2F3F5] font-semibold mb-2">Услуги</div>
+              <div className="text-xs uppercase tracking-[0.15em] text-[#1a3a2e] font-semibold mb-2">Услуги</div>
               <div className="flex flex-col gap-3">
-                <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
+                <a href="#" className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors">
                   Генеральная уборка
                 </a>
-                <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
+                <a href="#" className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors">
                   Экспресс-уборка за час
                 </a>
-                <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
+                <a href="#" className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors">
                   Предпродажная уборка
                 </a>
-                <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
+                <a href="#" className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors">
                   Мамин День
                 </a>
               </div>
@@ -770,18 +805,18 @@ export default function VerdantPage() {
 
             {/* Company Menu */}
             <div className="flex flex-col gap-4">
-              <div className="text-xs uppercase tracking-[0.15em] text-[#F2F3F5] font-semibold mb-2">Компания</div>
+              <div className="text-xs uppercase tracking-[0.15em] text-[#1a3a2e] font-semibold mb-2">Компания</div>
               <div className="flex flex-col gap-3">
-                <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
+                <a href="#" className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors">
                   О нас
                 </a>
-                <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
+                <a href="#" className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors">
                   Отзывы
                 </a>
-                <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
+                <a href="#" className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors">
                   Вакансии
                 </a>
-                <a href="#" className="text-sm text-[#A7ABB3] hover:text-[#F2F3F5] transition-colors">
+                <a href="#" className="text-sm text-[#5a8070] hover:text-[#1a3a2e] transition-colors">
                   Контакты
                 </a>
               </div>
@@ -789,15 +824,15 @@ export default function VerdantPage() {
 
             {/* Newsletter Subscription */}
             <div className="flex flex-col gap-4">
-              <div className="text-xs uppercase tracking-[0.15em] text-[#F2F3F5] font-semibold mb-2">Рассылка</div>
-              <p className="text-xs text-[#A7ABB3] mb-3">Акции, советы по уборке и специальные предложения.</p>
+              <div className="text-xs uppercase tracking-[0.15em] text-[#1a3a2e] font-semibold mb-2">Рассылка</div>
+              <p className="text-xs text-[#5a8070] mb-3">Акции, советы по уборке и специальные предложения.</p>
               <div className="flex flex-col gap-2">
                 <input
                   type="email"
                   placeholder="Введите email"
-                  className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-xs text-[#F2F3F5] placeholder-[#A7ABB3] focus:outline-none focus:border-pink-400/50 focus:ring-1 focus:ring-pink-400/20 transition-all"
+                  className="px-4 py-2 bg-white/80 border border-emerald-200 rounded-lg text-xs text-[#1a3a2e] placeholder-[#5a8070] focus:outline-none focus:border-emerald-400/50 focus:ring-1 focus:ring-emerald-400/20 transition-all"
                 />
-                <button className="px-4 py-2 border rounded-lg text-xs font-medium hover:bg-pink-500/30 hover:border-pink-500/50 transition-all bg-green-800 border-green-700 text-white">
+                <button className="px-4 py-2 border rounded-lg text-xs font-medium hover:bg-pink-500/30 hover:border-pink-500/50 transition-all bg-emerald-500 border-emerald-400 text-white">
                   Подписаться
                 </button>
               </div>
@@ -805,16 +840,16 @@ export default function VerdantPage() {
           </div>
 
           {/* Footer Bottom */}
-          <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#A7ABB3]">
+          <div className="border-t border-emerald-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#5a8070]">
             <div>2026 CLEAN №1. Все права защищены.</div>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-[#F2F3F5] transition-colors">
+              <a href="#" className="hover:text-[#1a3a2e] transition-colors">
                 Политика конфиденциальности
               </a>
-              <a href="#" className="hover:text-[#F2F3F5] transition-colors">
+              <a href="#" className="hover:text-[#1a3a2e] transition-colors">
                 Условия использования
               </a>
-              <a href="#" className="hover:text-[#F2F3F5] transition-colors">
+              <a href="#" className="hover:text-[#1a3a2e] transition-colors">
                 Настройки cookie
               </a>
             </div>

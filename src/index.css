@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,53 +6,56 @@
 
 @layer base {
   :root {
-    /* VERDANT Design Tokens */
-    --bg-primary: #0b0c0f;
-    --text-primary: #f2f3f5;
-    --text-secondary: #a7abb3;
-    --glass-bg: rgba(15, 17, 23, 0.3);
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --accent-pink: #ec4899;
-    --accent-purple: #a855f7;
+    /* Mint Pastel Design Tokens */
+    --bg-primary: #f0faf6;
+    --bg-secondary: #e8f7f1;
+    --text-primary: #1a3a2e;
+    --text-secondary: #5a8070;
+    --glass-bg: rgba(255, 255, 255, 0.55);
+    --glass-border: rgba(130, 200, 170, 0.25);
+    --accent-mint: #6dbf9e;
+    --accent-sage: #4a9e7e;
+    --accent-blush: #f0a5be;
+    --accent-soft: #b8e8d4;
 
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 150 40% 97%;
+    --foreground: 155 40% 15%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 150 30% 97%;
+    --card-foreground: 155 40% 15%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 150 30% 97%;
+    --popover-foreground: 155 40% 15%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 155 45% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 150 25% 90%;
+    --secondary-foreground: 155 40% 20%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 150 20% 92%;
+    --muted-foreground: 155 20% 45%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 150 35% 88%;
+    --accent-foreground: 155 40% 20%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 150 25% 85%;
+    --input: 150 25% 90%;
+    --ring: 155 45% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-background: 150 30% 96%;
+    --sidebar-foreground: 155 40% 20%;
+    --sidebar-primary: 155 45% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 150 25% 90%;
+    --sidebar-accent-foreground: 155 40% 20%;
+    --sidebar-border: 150 25% 85%;
+    --sidebar-ring: 155 45% 50%;
   }
 }
 
@@ -63,42 +66,44 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
+    background-color: #f0faf6;
+    color: #1a3a2e;
   }
 }
 
-/* VERDANT Glass Morphism Styles */
+/* Mint Glass Morphism Styles */
 .glass-nav {
-  background: rgba(15, 17, 23, 0.35);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(109, 191, 158, 0.3);
   border-radius: 56px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 32px rgba(74, 158, 126, 0.12);
 }
 
 .glass-nav-left {
-  background: rgba(15, 17, 23, 0.35);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(109, 191, 158, 0.3);
   border-radius: 16px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 32px rgba(74, 158, 126, 0.12);
 }
 
 .glass-card {
-  background: rgba(15, 17, 23, 0.25);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(109, 191, 158, 0.2);
+  box-shadow: 0 4px 20px rgba(74, 158, 126, 0.08);
 }
 
 .glass-card-inner {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(109, 191, 158, 0.18);
   animation: float-in 0.6s ease-out forwards;
   opacity: 0;
 }
@@ -106,19 +111,18 @@
 .glass-button {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  color: #f2f3f5;
+  box-shadow: 0 4px 16px rgba(74, 158, 126, 0.15);
   font-weight: 500;
 }
 
 .glass-pill {
-  background: rgba(15, 17, 23, 0.4);
+  background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(109, 191, 158, 0.25);
 }
 
-/* VERDANT Animations */
+/* Animations */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -219,7 +223,9 @@
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(16px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .animate-on-scroll.animate-in {
@@ -260,12 +266,12 @@ html {
   display: flex;
   overflow: hidden;
   user-select: none;
-  opacity: 0.4;
+  opacity: 0.5;
   transition: opacity 0.5s;
 }
 
 .logo-marquee:hover {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .logo-marquee-content {

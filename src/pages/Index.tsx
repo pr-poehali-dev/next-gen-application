@@ -246,7 +246,7 @@ export default function VerdantPage() {
         ref={heroRef}
         className={`relative min-h-screen flex flex-col items-center justify-center px-4 pt-24 pb-16 md:pt-32 md:pb-24 transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] overflow-hidden ${isLoaded ? "scale-100 opacity-100" : "scale-[1.03] opacity-0"}`}
         style={{
-          backgroundImage: `url('/hero-landscape.png')`,
+          backgroundImage: `url('https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/e9a40475-102c-41d0-9991-816600176c4e.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
@@ -256,7 +256,7 @@ export default function VerdantPage() {
           className="absolute inset-0 pointer-events-none"
           style={{
             transform: `translateY(${scrollY * 0.5}px)`,
-            backgroundImage: `url('/hero-landscape.png')`,
+            backgroundImage: `url('https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/e9a40475-102c-41d0-9991-816600176c4e.jpg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -310,8 +310,8 @@ export default function VerdantPage() {
                 }}
               >
                 <img
-                  src="/dashboard-screenshot.png"
-                  alt="Панель мониторинга VERDANT"
+                  src="https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/a922c6f1-ab91-4d10-9b8c-40b7a0c97994.jpg"
+                  alt="Профессиональная уборка"
                   className="object-cover dashboard-image w-full h-auto"
                 />
               </div>
@@ -461,10 +461,10 @@ export default function VerdantPage() {
                   <img
                     src={
                       [
-                        "/drone.png",
-                        "/real-time-satellite.png",
-                        "/biodiversity-tracking.png",
-                        "/deforestation-detect.png",
+                        "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/a922c6f1-ab91-4d10-9b8c-40b7a0c97994.jpg",
+                        "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/d13361d6-8e5f-40db-ba80-c82b843c952a.jpg",
+                        "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/1585a305-220d-4002-9955-ff8ddb82d752.jpg",
+                        "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/c2261ba6-57ae-4825-9502-0cec810ce8e8.jpg",
                       ][selectedFeature] || "/placeholder.svg"
                     }
                     alt="Превью функции"
@@ -481,25 +481,25 @@ export default function VerdantPage() {
                     title: "Генеральная уборка",
                     desc: "Полная уборка с мойкой окон, плинтусов, техники и всех труднодоступных мест",
                     Icon: Sparkles,
-                    image: "/drone.png",
+                    image: "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/a922c6f1-ab91-4d10-9b8c-40b7a0c97994.jpg",
                   },
                   {
                     title: "Экспресс-уборка за час",
                     desc: "Быстро наведём порядок, когда времени совсем нет",
                     Icon: Clock,
-                    image: "/real-time-satellite.png",
+                    image: "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/d13361d6-8e5f-40db-ba80-c82b843c952a.jpg",
                   },
                   {
                     title: "Предпродажная уборка",
                     desc: "Блестящая чистота, которая помогает продать квартиру быстрее",
                     Icon: Star,
-                    image: "/biodiversity-tracking.png",
+                    image: "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/1585a305-220d-4002-9955-ff8ddb82d752.jpg",
                   },
                   {
                     title: "Мамин День & Расхламление",
                     desc: "Уборка в подарок или помощь с организацией и расхламлением пространства",
                     Icon: Heart,
-                    image: "/deforestation-detect.png",
+                    image: "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/c2261ba6-57ae-4825-9502-0cec810ce8e8.jpg",
                   },
                 ].map((feature, i) => (
                   <button
@@ -540,19 +540,19 @@ export default function VerdantPage() {
                 {[
                   {
                     title: "Генеральная уборка",
-                    image: "/drone.png",
+                    image: "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/a922c6f1-ab91-4d10-9b8c-40b7a0c97994.jpg",
                   },
                   {
                     title: "Экспресс-уборка за час",
-                    image: "/real-time-satellite.png",
+                    image: "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/d13361d6-8e5f-40db-ba80-c82b843c952a.jpg",
                   },
                   {
                     title: "Предпродажная уборка",
-                    image: "/biodiversity-tracking.png",
+                    image: "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/1585a305-220d-4002-9955-ff8ddb82d752.jpg",
                   },
                   {
                     title: "Мамин День",
-                    image: "/deforestation-detect.png",
+                    image: "https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/c2261ba6-57ae-4825-9502-0cec810ce8e8.jpg",
                   },
                 ].map((feature, i) => {
                   const positionInStack = (i - selectedFeature + 4) % 4
@@ -674,7 +674,7 @@ export default function VerdantPage() {
         id="cta"
         className="relative py-24 md:py-40 px-4 animate-on-scroll overflow-hidden pt-0"
         style={{
-          backgroundImage: `url('/earth-cta.png')`,
+          backgroundImage: `url('https://cdn.poehali.dev/projects/00fdb722-c427-4e56-9366-81197477c552/files/2ddd0d11-6609-407f-9bc7-e1996beeda13.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",

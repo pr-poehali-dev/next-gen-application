@@ -290,12 +290,16 @@ export default function VerdantPage() {
               Более 11 лет безупречной работы. Генеральная уборка, экспресс-уборка, предпродажная подготовка — любой запрос, любой бюджет. №1 в Прокопьевске-Киселёвске.
             </p>
             <div className="stagger-reveal flex gap-4 justify-center flex-wrap" style={{ animationDelay: "270ms" }}>
-              <Button className="glass-button px-8 py-6 text-base rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 text-white">
-                Заказать уборку
-              </Button>
-              <Button className="glass-button px-8 py-6 text-base rounded-full bg-pink-500/20 border border-pink-400/30 hover:bg-pink-500/30 hover:border-pink-400/50 transition-all duration-300 text-white flex items-center gap-2">
-                <Phone className="w-4 h-4" /> Позвонить
-              </Button>
+              <a href="sms:+79050698829">
+                <Button className="glass-button px-8 py-6 text-base rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 text-white">
+                  Написать SMS
+                </Button>
+              </a>
+              <a href="tel:+79050698829">
+                <Button className="glass-button px-8 py-6 text-base rounded-full bg-pink-500/20 border border-pink-400/30 hover:bg-pink-500/30 hover:border-pink-400/50 transition-all duration-300 text-white flex items-center gap-2">
+                  <Phone className="w-4 h-4" /> Позвонить
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -695,12 +699,16 @@ export default function VerdantPage() {
           </p>
 
           <div className="flex gap-4 justify-center flex-wrap">
-            <Button className="glass-button text-base rounded-full bg-white/5 border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 text-white px-8 py-6 md:text-base">
-              Оставить заявку
-            </Button>
-            <Button className="glass-button text-base rounded-full bg-pink-500/20 border border-pink-400/30 hover:bg-pink-500/30 hover:border-pink-400/50 transition-all duration-300 text-white px-8 py-6 md:text-base flex items-center gap-2">
-              <Phone className="w-4 h-4" /> Позвонить
-            </Button>
+            <a href="sms:+79050698829">
+              <Button className="glass-button text-base rounded-full bg-white/5 border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 text-white px-8 py-6 md:text-base">
+                Написать SMS
+              </Button>
+            </a>
+            <a href="tel:+79050698829">
+              <Button className="glass-button text-base rounded-full bg-pink-500/20 border border-pink-400/30 hover:bg-pink-500/30 hover:border-pink-400/50 transition-all duration-300 text-white px-8 py-6 md:text-base flex items-center gap-2">
+                <Phone className="w-4 h-4" /> Позвонить
+              </Button>
+            </a>
           </div>
         </div>
       </section>
